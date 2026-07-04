@@ -1,0 +1,65 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="VoltReg" CircId="VoltReg-2" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-96,-144" rotation="0" hflip="1" vflip="1" label="VoltReg-2" idLabPos="-16,-24" labelrot="0" valLabPos="15,12" valLabRot="0" Voltage="12 V" />
+
+<item itemtype="Capacitor" CircId="Capacitor-3" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="-188,-84" rotation="90" hflip="1" vflip="1" label="Capacitor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="10 µF" Resistance="1 µΩ" InitVolt="0 V" ReaStep="0 ns" />
+
+<item itemtype="Capacitor" CircId="Capacitor-4" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="8,-84" rotation="90" hflip="1" vflip="1" label="Capacitor-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="10 µF" Resistance="1 µΩ" InitVolt="0 V" ReaStep="0 ns" />
+
+<item itemtype="Voltage Source" CircId="Voltage Source-6" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="-380,-160" rotation="0" hflip="1" vflip="1" label="Voltage Source-6" idLabPos="-32,-48" labelrot="0" valLabPos="-8,30" valLabRot="0" Running="true" Value_Volt="0 V" MaxValue="18 V" MinValue="0 V" />
+
+<item itemtype="Voltimeter" CircId="Voltimeter-7" mainComp="false" Show_id="false" Show_Val="false" Pos="-288,-20" rotation="0" hflip="1" vflip="1" label="Voltimeter-7" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Voltimeter" CircId="Voltimeter-8" mainComp="false" Show_id="false" Show_Val="false" Pos="148,-8" rotation="0" hflip="1" vflip="1" label="Voltimeter-8" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-9" mainComp="false" Show_id="false" Show_Val="false" Pos="-92,84" rotation="0" hflip="1" vflip="1" label="Ground-9" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-10" mainComp="false" Pos="-188,-144" />
+
+<item itemtype="Node" CircId="Node-12" mainComp="false" Pos="-92,56" />
+
+<item itemtype="Node" CircId="Node-13" mainComp="false" Pos="-124,56" />
+
+<item itemtype="Node" CircId="Node-14" mainComp="false" Pos="8,56" />
+
+<item itemtype="Node" CircId="Node-16" mainComp="false" Pos="-188,56" />
+
+<item itemtype="Node" CircId="Node-17" mainComp="false" Pos="-348,-144" />
+
+<item itemtype="Node" CircId="Node-18" mainComp="false" Pos="8,-144" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Capacitor-3-lPin" endpinid="Node-10-1" pointList="-188,-100,-188,-144" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="VoltReg-2-input" endpinid="Node-10-0" pointList="-112,-144,-188,-144" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Ground-9-Gnd" endpinid="Node-12-1" pointList="-92,68,-92,56" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="VoltReg-2-ref" endpinid="Node-13-1" pointList="-96,-128,-96,0,-124,0,-124,56" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="Node-13-2" endpinid="Node-12-0" pointList="-124,56,-92,56" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="Voltimeter-8-rPin" endpinid="Node-14-1" pointList="156,8,156,56,8,56" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="Node-12-2" endpinid="Node-14-0" pointList="-92,56,8,56" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Node-14-2" endpinid="Capacitor-4-rPin" pointList="8,56,8,-68" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Voltimeter-7-rPin" endpinid="Node-16-1" pointList="-280,-4,-280,56,-188,56" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Capacitor-3-rPin" endpinid="Node-16-0" pointList="-188,-68,-188,56" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Node-16-2" endpinid="Node-13-0" pointList="-188,56,-124,56" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Voltimeter-7-lPin" endpinid="Node-17-1" pointList="-296,-4,-348,-4,-348,-144" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="Node-17-2" endpinid="Voltage Source-6-outPin" pointList="-348,-144,-352,-144" />
+
+<item itemtype="Connector" uid="Connector-30" startpinid="Node-10-2" endpinid="Node-17-0" pointList="-188,-144,-348,-144" />
+
+<item itemtype="Connector" uid="Connector-32" startpinid="Voltimeter-8-lPin" endpinid="Node-18-1" pointList="140,8,60,8,60,-144,8,-144" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="VoltReg-2-output" endpinid="Node-18-0" pointList="-80,-144,8,-144" />
+
+<item itemtype="Connector" uid="Connector-34" startpinid="Node-18-2" endpinid="Capacitor-4-lPin" pointList="8,-144,8,-100" />
+
+</circuit>
